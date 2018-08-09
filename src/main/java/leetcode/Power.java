@@ -19,7 +19,7 @@ public class Power {
 
     public static void main(String[] args) {
         Power power = new Power();
-        System.out.println(power.myPow(2,6));
+        System.out.println(power.myPow(2,8));
 
     }
 }
