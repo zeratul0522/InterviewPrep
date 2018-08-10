@@ -12,10 +12,15 @@ public class Print {
 
     public static void printListList(List<List<Integer>> list){
         for(List l : list){
+            System.out.print("[");
+            StringBuilder sb = new StringBuilder();
             for(int i = 0; i < l.size(); i++){
-                System.out.print(l.get(i));
+                sb.append(l.get(i));
+                sb.append(",");
             }
-            System.out.println(" ");
+            if(sb.length() > 0)  sb.delete(sb.length()-1,sb.length());
+            System.out.print(sb.toString());
+            System.out.println("]");
         }
     }
 
