@@ -1,21 +1,15 @@
 package main.java.leetcode;
 
-import main.java.zutil.ListNode;
-import main.java.zutil.TestUtils;
 import main.java.zutil.TreeNode;
 
-import java.util.ArrayDeque;
-import java.util.ArrayList;
-import java.util.Deque;
-import java.util.List;
+import java.util.*;
 
 /**
- * @Desc Based on BFS.
+ * @Desc
  * @Author Fan Zejun E-mail:fzj0522@outlook.com
- * @Version Created at: 2018/8/9 下午2:20
+ * @Version Created at: 2018/8/9 下午8:44
  */
-
-public class BinaryTreeLevelOrderTraversal {
+public class BinaryTreeLevelOrderTraversal2 {
     public static class TreeNodeWithLevel{
         public TreeNode node;
         public int level;
@@ -25,7 +19,7 @@ public class BinaryTreeLevelOrderTraversal {
             this.level = level;
         }
     }
-    public List<List<Integer>> levelOrder(TreeNode root) {
+    public List<List<Integer>> levelOrderBottom(TreeNode root) {
         List<List<Integer>> list = new ArrayList<>();
         if(root == null) return list;
         Deque<TreeNodeWithLevel> queue = new ArrayDeque<>();
@@ -39,17 +33,8 @@ public class BinaryTreeLevelOrderTraversal {
             if(queueHead.node.left != null) queue.offer(new TreeNodeWithLevel(queueHead.node.left, level+1));
             if(queueHead.node.right != null) queue.offer(new TreeNodeWithLevel(queueHead.node.right, level+1));
         }
+        Collections.reverse(list);
         return list;
 
     }
-
-    public static void main(String[] args) {
-        BinaryTreeLevelOrderTraversal binaryTreeLevelOrderTraversal = new BinaryTreeLevelOrderTraversal();
-        Integer[] nums = {3};
-        TreeNode root = TreeNode.generateTreeWithBFS(nums);
-        List<List<Integer>> list = binaryTreeLevelOrderTraversal.levelOrder(root);
-        System.out.println(TestUtils.printNestedList(list));
-
-    }
-
 }
