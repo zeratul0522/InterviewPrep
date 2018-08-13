@@ -5,6 +5,7 @@ package main.java.leetcode;
  * @Author Fan Zejun E-mail:fzj0522@outlook.com
  * @Version 2018/8/1 下午7:40
  */
+
 public class Power {
     public double myPow(double x, int n) {
         if(n==0) return 1;
