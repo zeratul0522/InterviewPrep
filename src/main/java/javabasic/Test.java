@@ -8,7 +8,6 @@ package main.java.javabasic;
 public class Test {
 
     public static void main(String[] args){
-       Test t = new Test();
-        System.out.println(Test.class.isInstance(t));
+        Object o = new Object();
     }
 }
