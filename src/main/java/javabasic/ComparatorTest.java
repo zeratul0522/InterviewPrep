@@ -9,7 +9,7 @@ import java.util.*;
  * @Author Fan Zejun E-mail:fzj0522@outlook.com
  * @Version 2018/7/4 下午2:44
  */
-public class Test {
+public class ComparatorTest {
 
     public static void main(String[] args){
         int[] nums = new int[]{1,4,6,2,3};
