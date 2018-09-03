@@ -12,6 +12,25 @@ import java.util.List;
  * @Version 2018/7/11 下午8:13
  */
 public class Test {
+    private boolean milk;
+    private int appleNum;
+
+    public int getAppleNum() {
+        return appleNum;
+    }
+
+    public void setAppleNum(int appleNum) {
+        this.appleNum = appleNum;
+    }
+
+    public boolean isMilk() {
+        return milk;
+    }
+
+    public void setMilk(boolean milk) {
+        this.milk = milk;
+    }
+
     public static void main(String[] args){
        String s = "a ";
        s=s.trim();

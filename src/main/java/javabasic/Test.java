@@ -1,5 +1,8 @@
 package main.java.javabasic;
 
+import java.util.ArrayDeque;
+import java.util.Deque;
+
 /**
  * @Desc
  * @Author Fan Zejun E-mail:fzj0522@outlook.com
@@ -9,5 +12,7 @@ public class Test {
 
     public static void main(String[] args){
         Object o = new Object();
+        Deque<String> deque = new ArrayDeque<>();
+
     }
 }
