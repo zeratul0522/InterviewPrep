@@ -27,7 +27,7 @@ public class Print {
     public static void printMatrix(int[][] matrix){
         for(int i = 0; i < matrix.length; i++){
             for(int j : matrix[i]){
-                System.out.print(j);
+                System.out.print(j+" ");
             }
             System.out.println(" ");
         }
