@@ -33,4 +33,18 @@ public class BinaryTreePreorderTraversal {
         }
         return ret;
     }
+
+    public List<Integer> preorderTraversal2(TreeNode root){
+        List<Integer> ret = new ArrayList<>();
+        helper(root,ret);
+        return ret;
+    }
+
+    private void helper(TreeNode root, List<Integer> list){
+        if(root==null)
+            return;
+        list.add(root.val);
+        helper(root.left,list);
+        helper(root.right,list);
+    }
 }

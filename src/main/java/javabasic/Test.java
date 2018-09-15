@@ -10,5 +10,9 @@ public class Test {
         String s = "ddd";
         System.out.println(s=="ddd");
         System.out.println(s.equals("ddd"));
+        Object o = new Object();
+
+        A a = new A();
+
     }
 }
