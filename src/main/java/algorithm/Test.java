@@ -11,10 +11,9 @@ import java.util.List;
  * @Author Fan Zejun E-mail:fzj0522@outlook.com
  * @Version 2018/7/11 下午8:13
  */
-public class Test {
-    public static void main(String[] args){
-       String s = "a ";
-       s=s.trim();
-        System.out.println(s.length());
+public class Test implements Cloneable{
+    public static void main(String[] args) throws CloneNotSupportedException{
+        A a = new A();
+        //A aaa = (A)a.clone();
     }
 }
