@@ -22,7 +22,7 @@ public class ComparatorTest {
         }
         Comparator myComparator = new MyComparator();
         Collections.sort(list,myComparator);
-        for(ListNode node : list){
+    for(ListNode node : list){
             System.out.print(node.val);
         }
     }
